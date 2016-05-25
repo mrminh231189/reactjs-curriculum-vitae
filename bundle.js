@@ -25204,35 +25204,7 @@
 	      _react2.default.createElement(
 	        "h1",
 	        null,
-	        "The app has React Router"
-	      ),
-	      _react2.default.createElement(
-	        "p",
-	        null,
-	        "While the ",
-	        _react2.default.createElement(
-	          "a",
-	          { href: "https://css-tricks.com/learning-react-router/" },
-	          "CSS-Tricks article"
-	        ),
-	        " for this guide covers an explanation of ",
-	        _react2.default.createElement(
-	          "strong",
-	          null,
-	          "React Router"
-	        ),
-	        ", there are still many implementation details in this code that the article doesn't cover. For a better understanding of those details, see the ",
-	        _react2.default.createElement(
-	          "a",
-	          { href: "https://github.com/bradwestfall/CSS-Tricks-React-Series" },
-	          "Github documentation"
-	        ),
-	        " for this guide."
-	      ),
-	      _react2.default.createElement(
-	        "p",
-	        null,
-	        "As far as the [Search Title] and [Total Results] that you'll see on the results page, those are static for now. We will make them dynamic in the third guide."
+	        "Hà Phan Minh"
 	      )
 	    );
 	  }
