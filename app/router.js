@@ -1,6 +1,6 @@
 import React from 'react';
-import { Router, Route, browserHistory, IndexRoute } from 'react-router';
-
+import { Router, Route, useRouterHistory, IndexRoute } from 'react-router';
+import { createHistory, useBasename } from 'react-router/node_modules/history';
 // Layouts
 import MainLayout from './components/main-layout';
 import SearchLayout from './components/search-layout';
@@ -11,10 +11,14 @@ import UserList from './components/user-list';
 import UserProfile from './components/user-profile';
 import WidgetList from './components/widget-list';
 
+const browserHistory = useRouterHistory(createHistory)({
+  basename: "/reactjs-curriculum-vitae"
+});
+
 export default (
   <Router history={browserHistory}>
-    <Route component={MainLayout}>
-      <Route path="/" component={Home} />
+    <Route path="/" component={MainLayout}>
+      <IndexRoute component={Home} />
 
       <Route path="users">
         <Route component={SearchLayout}>
